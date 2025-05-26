@@ -1,0 +1,124 @@
+<resources>
+    <!-- App Info -->
+    <string name="app_name">BearMod-Loader</string>
+    <string name="app_version_static">Version 1.3.0</string>
+
+    <!-- Login Screen -->
+    <string name="app_logo">App Logo</string>
+    <string name="login_subtitle">Enter your license key to continue</string>
+    <string name="license_key">License Key</string>
+    <string name="enter_license_key">Enter your license key</string>
+    <string name="invalid_license_key_format">Invalid license key format</string>
+    <string name="remember_me">Remember me</string>
+    <string name="login">Login</string>
+    <string name="login_success">Login successful</string>
+    <string name="login_error">Login failed: %1$s</string>
+    <string name="license_valid_until">License valid until: %1$s</string>
+    <string name="registration_date">Registration date: %1$s</string>
+    <string name="days_remaining">%1$d days remaining</string>
+    <string name="keyauth_init_warning">KeyAuth initialization warning. You may experience login issues.</string>
+    <string name="keyauth_init_failed">Failed to initialize KeyAuth. Please check your internet connection and try again.</string>
+    <string name="version_info">Version %1$s</string>
+
+    <!-- Dashboard Screen -->
+    <string name="dashboard_title">Dashboard</string>
+    <string name="available_patches">Available Patches</string>
+    <string name="target_app">Target App</string>
+    <string name="select_target">Select Target</string>
+    <string name="scan_offsets">Scan Offsets</string>
+    <string name="apply_patch">Apply Patch</string>
+    <string name="patch_status">Patch Status</string>
+    <string name="update_available">Update Available</string>
+    <string name="up_to_date">Up to Date</string>
+    <string name="not_installed">Not Installed</string>
+    <string name="no_patches_available">No patches available</string>
+    <string name="game_version">Game Version: %1$s</string>
+    <string name="updated">Updated: %1$s</string>
+
+    <!-- Patch Execution Screen -->
+    <string name="patch_execution">Patch Execution</string>
+    <string name="execution_logs">Execution Logs</string>
+    <string name="execution_mode">Execution Mode</string>
+    <string name="root_mode">Root Mode</string>
+    <string name="non_root_mode">Non-Root Mode</string>
+    <string name="start_patching">Start Patching</string>
+    <string name="stop_patching">Stop Patching</string>
+    <string name="patching_in_progress">Patching in progress…</string>
+    <string name="patching_complete">Patching complete</string>
+    <string name="patching_failed">Patching failed: %1$s</string>
+
+    <!-- Download Screen -->
+    <string name="download_title">Download</string>
+    <string name="download_patches">Download Patches</string>
+    <string name="available_releases">Available Releases</string>
+    <string name="no_releases_available">No releases available</string>
+    <string name="select_release_first">Please select a release first</string>
+    <string name="released">Released: %1$s</string>
+    <string name="apk_size">APK Size: %1$s</string>
+    <string name="obb_size">OBB Size: %1$s</string>
+    <string name="total_size">Total Size: %1$s</string>
+    <string name="download_progress">Download Progress</string>
+    <string name="downloading">Downloading… %1$s / %2$s</string>
+    <string name="downloading_detailed">Downloading… %1$s / %2$s • %3$s • ETA: %4$s</string>
+    <string name="download_complete">Download Complete</string>
+    <string name="download_complete_path">Download Complete: %1$s</string>
+    <string name="download_failed">Download Failed: %1$s</string>
+    <string name="download_cancelled">Download Cancelled</string>
+    <string name="download_in_progress">Download in progress. Do you want to cancel?</string>
+    <string name="continue_download">Continue Download</string>
+    <string name="cancel_download">Cancel Download</string>
+    <string name="available">Available</string>
+    <string name="downloading_status">Downloading</string>
+    <string name="completed">Completed</string>
+    <string name="failed">Failed</string>
+    <string name="search_releases">Search releases…</string>
+    <string name="filter_by_version">Filter by version</string>
+    <string name="sort_by_date">Sort by date</string>
+    <string name="sort_by_size">Sort by size</string>
+    <string name="no_results_found">No results found</string>
+    <string name="clear_filters">Clear filters</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="app_settings">App Settings</string>
+    <string name="patch_settings">Patch Settings</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="reset_config">Reset Configuration</string>
+    <string name="toggle_stealth">Toggle Stealth Mode</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="auto_login">Auto Login</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="language">Language</string>
+    <string name="about">About</string>
+    <string name="about_description">BearMod-Loader is a powerful tool for managing and applying patches to enhance your gaming experience.</string>
+    <string name="logout">Logout</string>
+    <string name="cache_cleared">Cache cleared</string>
+    <string name="config_reset">Configuration reset</string>
+    <string name="clear_cache_confirm">Are you sure you want to clear the cache? This will remove all downloaded patches.</string>
+    <string name="reset_config_confirm">Are you sure you want to reset the configuration? This will restore all settings to their default values.</string>
+    <string name="logout_confirm">Are you sure you want to logout? You will need to enter your license key again.</string>
+
+
+
+    <!-- Common -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="retry">Retry</string>
+    <string name="loading">Loading…</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="warning">Warning</string>
+    <string name="info">Information</string>
+    <string name="exit">Exit</string>
+    <string name="continue_anyway">Continue Anyway</string>
+    <string name="app_version">Version 1.3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="patches_updated">Patches updated</string>
+    <string name="sync_error">Sync error: %1$s</string>
+    <string name="scanning_offsets">Scanning Offsets</string>
+    <string name="scanning_offsets_for">Scanning offsets for %1$s</string>
+    <string name="all">All</string>
+    <string name="latest">Latest</string>
+    <string name="pull_down_to_refresh_or_check_your_connection">Pull down to refresh or check your connection</string>
+</resources>

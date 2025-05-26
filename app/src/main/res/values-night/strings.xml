@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="all">All</string>
+    <string name="latest">Latest</string>
+    <string name="pull_down_to_refresh_or_check_your_connection">Pull down to refresh or check your connection</string>
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_release"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/surface_container"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/surface_container_high"
+    app:strokeWidth="1dp"
+    style="@style/Widget.Material3.CardView.Elevated">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <!-- Release Header with Icon -->
+        <ImageView
+            android:id="@+id/iv_release_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/circle_background"
+            android:contentDescription="@string/download_patches"
+            android:padding="12dp"
+            android:src="@drawable/ic_download"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/primary" />
+
+        <TextView
+            android:id="@+id/tv_release_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/chip_status"
+            app:layout_constraintStart_toEndOf="@+id/iv_release_icon"
+            app:layout_constraintTop_toTopOf="@+id/iv_release_icon"
+            tools:text="Memory Patch v1.2" />
+
+        <TextView
+            android:id="@+id/tv_release_version"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_release_name"
+            app:layout_constraintStart_toEndOf="@+id/iv_release_icon"
+            app:layout_constraintTop_toBottomOf="@+id/tv_release_name"
+            tools:text="Version 1.2.0" />
+
+        <!-- Status Chip -->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_status"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/available"
+            android:textColor="@color/primary"
+            app:chipBackgroundColor="@color/primary_light"
+            app:chipCornerRadius="8dp"
+            app:chipMinHeight="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Available" />
+
+        <TextView
+            android:id="@+id/tv_release_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_release_icon"
+            tools:text="This patch modifies memory values to enhance gameplay performance and unlock premium features." />
+
+        <!-- Info Chips Container -->
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:chipSpacing="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_release_description"
+            app:singleLine="false">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_game_version"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="false"
+                android:text="Game v1.0.5"
+                android:textColor="@color/text_secondary"
+                app:chipBackgroundColor="@color/surface_container_high"
+                app:chipCornerRadius="6dp"
+                app:chipMinHeight="28dp"
+                tools:text="Game v1.0.5" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_release_date"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="false"
+                android:text="2023-06-15"
+                android:textColor="@color/text_secondary"
+                app:chipBackgroundColor="@color/surface_container_high"
+                app:chipCornerRadius="6dp"
+                app:chipMinHeight="28dp"
+                tools:text="2023-06-15" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_file_size"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="false"
+                android:text="25.4 MB"
+                android:textColor="@color/accent"
+                app:chipBackgroundColor="@color/accent_light"
+                app:chipCornerRadius="6dp"
+                app:chipMinHeight="28dp"
+                app:chipIcon="@drawable/ic_download"
+                app:chipIconTint="@color/accent"
+                tools:text="25.4 MB" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- Ripple Effect Overlay -->
+        <View
+            android:id="@+id/ripple_effect"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
