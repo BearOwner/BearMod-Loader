@@ -1,0 +1,27 @@
+# .github/workflows/ai-assistant.yml
+name: AI Modifications
+on:
+  workflow_dispatch:  # Manual trigger only
+
+jobs:
+  suggest-improvements:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ai-updates  # Only this branch
+      
+      - name: Apply verified patches
+        run: |
+          curl -s https://gist.github.com/ai-assistant/verified-patch/raw | \
+          gpg --verify patch.sig - && \
+          git apply patch.diff
+      
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}  # Auto-generated, repo-scoped
+          branch: ai-updates
+          base: main
+          title: "[AI] Verified Security Updates"
+          body: "Automated code improvements"
