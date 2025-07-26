@@ -1,0 +1,8 @@
+# .github/settings.yml
+branch_protection_rules:
+  - pattern: main
+    required_pull_request_reviews:
+      required_approving_review_count: 1
+      dismiss_stale_reviews: true
+    restrictions:
+      apps: ["GitHub Actions"]
